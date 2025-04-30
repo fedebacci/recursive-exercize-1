@@ -54,7 +54,8 @@ const posts = [
         ]
     }
 ]
-
+console.debug("posts", posts);
+console.table(posts);
 
 
 
@@ -87,6 +88,11 @@ const searchForUniqueTitles = (posts = []) => {
 
 
 searchForTitles(posts);
-console.debug(titles);
+console.debug("titles", titles);
+console.table(titles);
+
+
+
 searchForUniqueTitles(posts);
-console.debug(uniqueTitles);
+console.debug("uniqueTitles", uniqueTitles);
+console.table(uniqueTitles);
